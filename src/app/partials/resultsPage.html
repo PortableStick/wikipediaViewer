@@ -1,0 +1,11 @@
+<header>
+	<a href="#/"><div class="btn btn-primary">Back</div></a>
+	<h4>Searched for: <span class="searchTerm">{{searchTerm}}</span>
+</header>
+
+<div class="results" ng-repeat="result in results">
+	<a ng-href="{{result.url}}" class="result" target="_blank">
+		<h1>{{result.title}}</h1>
+		<h3 ng-bind-html="result.snippet"></h3>
+	</a>
+</div>
