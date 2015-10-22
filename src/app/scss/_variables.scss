@@ -1,0 +1,23 @@
+/* Fonts
+================================ */
+
+@import url(https://fonts.googleapis.com/css?family=Oswald|Playfair+Display);
+
+$oswald						:	'Oswald', sans;
+$playfair					:	'Playfair', times;
+
+/* Color declarations
+================================ */
+$shadowBlack				:	opacify(#999, 0.9);
+$lightGrey					:	opacify(#ccc, 0.99);
+$fontBlack					:	opacify(#333, 0.7);
+
+/* Color assingments
+================================ */
+
+$headlineFont				:	$fontBlack;
+$snippetFont				:	$fontBlack;
+$headlineShadow				:	$shadowBlack;
+$headlineHoverFont			:	lighten($headlineFont, 05%);
+$divHoverBG					:	$lightGrey;
+$divBorderColor				:	$divHoverBG;

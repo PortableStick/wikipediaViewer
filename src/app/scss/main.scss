@@ -1,0 +1,104 @@
+*{
+	box-sizing: border-box;
+}
+.container{
+	text-align: center;
+	.title{
+		font-size: 3em;
+		margin-top: 20px;
+		i.fa{
+			padding-right: 10px;
+			font-size: 3em;
+		}
+		h1{
+			display: inline-block;
+		}
+	}
+	.randomBtn{
+		margin-top: 10px;
+		font-size: 2em;
+	}
+}
+.searchBar{
+	position: relative;
+	margin-top: 70px;
+	text-align: center;
+
+	i.fa{
+		font-size: 4em;
+		position:absolute;
+		left: 170px;
+		top:20px;
+	}
+
+	.searchInput{
+		font-size: 4em;
+		height: auto;
+		text-indent: 70px;
+	}
+
+	.btn{
+		font-size: 4em;
+	}
+
+}
+
+.resultsPage{
+	a{
+		color: $headlineFont;
+		&:hover{
+			color: $headlineHoverFont;
+			text-decoration: none;
+		}
+	}//a
+
+	header{
+		text-align: center;
+		border-bottom: 1px solid black;
+
+		h4{
+			display: inline-block;
+			font-size: 2.15em;
+			text-variant: small-caps;
+			font: $oswald;
+		}
+		a{
+			float: left;
+			div.btn{
+				font-size: 2em;
+			}
+		}
+	}//header
+
+	.results{
+		padding: 15px 0;
+		padding-left: 20px;
+		margin-bottom: 20px;
+		a{
+			h1{
+				font: $oswald;
+			}
+
+			h3{
+				text-indent: 30px;
+				font-size: 1.4em;
+				font: $playfair;
+				color: $snippetFont;
+				&::before{
+					content: "- "
+				}
+
+			}
+		}//a
+
+		&:hover h1{
+				text-shadow: 1px 3px 4px $headlineShadow;
+			}
+		&:hover{
+			background-color: $divHoverBG;
+			box-shadow: 0 0 5px 5px $divBorderColor;
+
+		}
+	}
+	
+}
