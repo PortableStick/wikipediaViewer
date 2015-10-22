@@ -1,3 +1,10 @@
-<div class="searchBar">
-	<i class="fa fa-search"></i><input type="text" placeholder="make your search" ng-model="searchTerm"><a ng-href="#/{{searchTerm}}"><span class="searchBtn btn btn-primary">Search</span></a>
+<div class="container">
+	<div class="title">
+		<i class="fa fa-wikipedia-w"></i>
+		<h1>A Wikipedia Viewer</h1>
+	</div>
+	<div class="searchBar container form-inline">
+		<i class="fa fa-search"></i><input type="text" placeholder="make your search" ng-model="searchTerm" class="searchInput form-control" autofocus><a ng-href="#/{{searchTerm}}"><span class="searchBtn btn btn-primary">Search</span></a>
+	</div>
+	<a ng-href="{{randomWiki}}"><span class="btn btn-primary randomBtn">Get a random page</span></a>
 </div>

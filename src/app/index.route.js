@@ -8,7 +8,8 @@
   function routeConfig($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/partials/searchBar.html'
+        templateUrl: 'app/partials/searchBar.html',
+        controller: 'SearchController'
       })
       .when('/:searchTerm', {
         templateUrl: 'app/partials/resultsPage.html',
